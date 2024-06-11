@@ -12,13 +12,16 @@ declare module SvgComponent {
             viewBox?: string,
             height?: string,
             width?: string,
-        }
+        },
+        color?: string,
     }
 
     type TProps = BaseProps & { [key: string]: any }
     export type TMyComponent = (props: TProps) => React.ReactElement
 }
-declare module "*.svg" {
-    const component: any
-    export default component
+
+declare module '*.svg' {
+    const content: any
+    export default content;
 }
+

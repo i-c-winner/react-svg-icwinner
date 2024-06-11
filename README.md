@@ -1,15 +1,41 @@
-# 🚀 Welcome to your new awesome project!
+## Install
 
-This project has been created using **webpack-cli**, you can now run
+`npm install svg-react-icwinner`
 
-```
-npm run build
-```
+## Use
 
-or
+ `import SvgElement from "svg-react-icwinner"
+  import image from "path/to/svgfile"
+  function App() {
+  return <SvgElement element={image} sizes={} />  
+ }
+ `
 
-```
-yarn build
-```
+## Setiings
 
-to bundle your application
+  В качестве loader нужно использовать svg-loader https://www.npmjs.com/package/svg-loader
+  либо аналог с подобным интерфейсом.
+
+  Если используете TypeScript необходимо добавить тип для модуля
+
+`
+//index.d.ts
+declare module 'svg-react-icwinner' {
+interface BaseProps {
+element: {
+content: string,
+color?: string,
+attributes: {
+[key: string]: string
+}
+},
+}
+type TProps=BaseProps & {[key: string]: string}
+export type TMyComponent = (props: TProps) => React.ReactElement
+}
+`
+## License
+  ISC
+
+
+

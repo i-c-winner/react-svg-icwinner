@@ -34,7 +34,7 @@ const config = {
             rules: [
                 {
                     test: /\.svg$/,
-                    loader: 'svg-loader',
+                    loader: 'svg-loader'
                 },
                 {
                     test: /\.m?js$/,
@@ -82,7 +82,7 @@ const config = {
             ],
         },
         resolve: {
-            extensions: ['.tsx', '.ts', '.jsx', '.js', '...'],
+            extensions: ['.tsx', '.ts', '.jsx', '.js', '.svg', '...'],
         }
         ,
     }
