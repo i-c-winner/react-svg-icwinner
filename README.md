@@ -1,10 +1,10 @@
 ## Install
 
-`npm install svg-react-icwinner`
+`npm install react-svg-icwinner`
 
 ## Use
 
- `import SvgElement from "svg-react-icwinner"
+ `import SvgElement from "react-svg-icwinner"
   import image from "path/to/svgfile"
   function App() {
   return <SvgElement element={image} sizes={} />  
