@@ -46,14 +46,12 @@ const config = {
                 {
                     test: /\.(ts|tsx)$/i,
                     use: [
+
                         {
                             loader: 'babel-loader',
                             options: {
                                 presets: ['@babel/preset-env']
                             }
-                        },
-                        {
-                            loader: 'ts-loader'
                         },
                     ],
                     exclude: ['/node_modules/'],

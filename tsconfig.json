@@ -1,16 +1,21 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "module": "ES6",
-    "target": "ES6",
+    "module": "es6",
+    "target": "ESNext",
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "typeRoots": ["types/"]
   },
   "files": [
     "index.d.ts"
   ],
-  "include": ["src/**/*", "development/**/*"]
+  "include": ["src/**/*", "development/**/*"],
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "es2015"
+    }
+  }
 }

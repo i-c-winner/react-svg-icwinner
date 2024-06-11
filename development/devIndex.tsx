@@ -1,6 +1,7 @@
 import ReactDom from "react-dom/client";
 import React from "react";
 
+
 // @ts-ignore
 import icon from './logo'
 import {SvgElement} from "../src/components/SvgElement";

@@ -4,7 +4,7 @@
 
 ## Use
 
- `import SvgElement from "react-svg-icwinner"
+ `import {SvgElement} from "react-svg-icwinner"
   import image from "path/to/svgfile"
   function App() {
   return <SvgElement element={image} sizes={} />  
@@ -20,7 +20,7 @@
 
 `
 //index.d.ts
-declare module 'svg-react-icwinner' {
+declare module 'react-svg-icwinner' {
 interface BaseProps {
 element: {
 content: string,
