@@ -24,14 +24,13 @@ declare module 'react-svg-icwinner' {
 interface BaseProps {
 element: {
 content: string,
-color?: string,
 attributes: {
 [key: string]: string
 }
 },
 }
 type TProps=BaseProps & {[key: string]: string}
-export type TMyComponent = (props: TProps) => React.ReactElement
+export const SvgElement = (props: TProps) => React.ReactElement
 }
 `
 ## License

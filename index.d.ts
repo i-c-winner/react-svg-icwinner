@@ -13,7 +13,6 @@ declare module SvgComponent {
             height?: string,
             width?: string,
         },
-        color?: string,
     }
 
   export type TProps = BaseProps & { [key: string]: any }
