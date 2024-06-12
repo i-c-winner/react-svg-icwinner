@@ -1,8 +1,8 @@
 import React,  {useRef, useEffect} from "react";
 import {SvgComponent} from "../../index";
-import {defaultOptions} from "../constants";
+import {defaultOptions} from "../constants.js";
 
-const  SvgElement: SvgComponent.TMyComponent = (props)  =>{
+function SvgElement (props: SvgComponent.TProps) {
     let {width, height, viewBox}= defaultOptions.sizes
     if (props.sizes) {
         if (props.sizes.height) height=props.sizes.height

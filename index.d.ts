@@ -16,8 +16,7 @@ declare module SvgComponent {
         color?: string,
     }
 
-    type TProps = BaseProps & { [key: string]: any }
-    export type TMyComponent = (props: TProps) => React.ReactElement
+  export type TProps = BaseProps & { [key: string]: any }
 }
 
 declare module '*.svg' {
